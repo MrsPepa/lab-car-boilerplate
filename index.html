@@ -14,6 +14,7 @@
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar-header">
+					<!--menu version mobile-->
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 						<span class="sr-only">ToggleNavigation</span>
 						<span class="icon-bar"></span>
@@ -26,7 +27,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="#" class="opcs">Viaja</a></li>
 						<li><a href="#" class="opcs">Conduce</a></li>
-						<li><a href="#" class="opcs">Inicia sesión</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#modalLogIn" class="opcs">Inicia sesión</a></li>
 					</ul>
 				</div>
 			</div>
@@ -34,15 +35,45 @@
 	</header>
 	<!--cuerpo de pagina-->
 	<main>
+		<!--log in modal/registro-->
+		<div id="modalLogIn" class="modal fade" tabindex="-1" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header" align="center">
+						<img src="assets/images/user_icon.png" alt="user">
+						<button type="button" class="close" data-dismiss="modal">
+							<span aria-hidden="true">x</span>
+						</button>
+					</div>
+					<!--formulario log in-->
+					<form>
+						<div class="modal-body">
+							<input type="text" id="username" class="form-control" placeholder="Username">
+							<input type="text" id="password" class="form-control" placeholder="Password">
+							<div class="checkbox">
+								<label id="remember">
+									<input type="checkbox"> Remember me
+								</label>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button class="submit btn btn-default btn-lg btn-block logIn">LOGIN</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 		<!--seccion 1-->
-		<section id="car"class="container">
+		<section id="car" class="container">
 			<div class="row">
 				<div class="block1 col-xs-10 col-sm-10 col-md-5 col-lg-5">
 					<h1 class="hidden-xs hidden-sm">Disfruta del viaje</h1>
 					<h1 class="hidden-xs hidden-sm">Eres dueño de tu tiempo</h1>
 					<h1 class="hidden-lg hidden-md">Comienza a viajar</h1>
 					<h3 class="hidden-xs hidden-md">Viaja con <img src="assets/images/logoBlanco.png" alt="Logo blanco"></h3>
-					<p><button class="btn btn-default btn-lg hidden-xs hidden-sm">REGÍSTRATE</button></p>
+					<p><button type="button" class="btn btn-default btn-lg hidden-xs hidden-sm">REGÍSTRATE</button></p>
+					<!--version mobile boton-->
+					<p><button type="button" class="btn btn-default btn-lg hidden-md hidden-lg">Descarga el app</button></p>
 					<div class="line hidden-xs hidden-sm"></div>
 					<h4 class="hidden-xs hidden-sm">O bien</h4>
 					<div class="line hidden-xs hidden-sm"></div>
@@ -69,6 +100,12 @@
 							<p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
 						</div>
 					</div>
+				</div>
+			</div>
+			<!--solo movil-->
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
+					<h4>Llega a tu destino aún más rápido</h4>
 				</div>
 			</div>
 		</section>
@@ -139,6 +176,20 @@
 							<p><a href="#">Servicios</a></p>
 							<p><a href="#">Laboratoria</a></p>
 							<p><a href="#">Coders</a></p>
+						</div>
+						<!--iconos social media arriba-->
+						<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+							<div class="row">
+								<div class="col-xs12 col-sm-12 hidden-md hidden-lg" id="socialMediaUp">
+									<span>
+										<a href="#"><i class="icon fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+										<a href="#"><i class="icon fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+										<a href="#"><i class="icon fa fa-linkedin fa-lg " aria-hidden="true"></i></a>
+										<a href="#"><i class="icon fa fa-apple fa-lg" aria-hidden="true"></i></a>
+										<a href="#"><i class="icon fa fa-caret-right fa-lg" aria-hidden="true"></i></a>
+									</span>
+								</div>
+							</div>
 						</div>
 						<a href="#"><img src="assets/images/appstore.png" alt="appstore" class="download img-responsive"></a><a href="#"><img src="assets/images/enBadgeWebGeneric.png" alt="webgeneric" class="download img-responsive"></a>
 					</div>
