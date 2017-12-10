@@ -238,5 +238,14 @@ estilos modal
   color: #000;
 }
 .logIn {
-  color: #FFC107;
+  background-color: #FFC107;
+}
+.forgot {
+  margin-left: 5%;
+  margin-top: 10%;
+  color: #000;
+}
+.click {
+  color: red;
+  margin-left: 1%;
 }
