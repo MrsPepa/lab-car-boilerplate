@@ -78,7 +78,7 @@ main{
 
 .blockOrange{
   background-color: #FFC107;
-  height: 38em;
+  height: auto;
   width: 100%;
 }
 
@@ -198,4 +198,11 @@ footer {
 .icon{
   color: #FFF;
   margin: 0.5em;
+}
+.download {
+  margin-bottom: 2em;
+}
+footer a {
+  font-size: 1.2em;
+  color: #fff;
 }
